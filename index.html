@@ -5,8 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Tracker</title>
     <script type="module" src="./dist/main.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Task Tracker</h1>
+<form id="task-submit-form">
+<label for="task-input">Task name:</label>
+<input
+  id="task-input"
+  type="text"
+  placeholder="New task"
+  name="name"
+required
+/>
+
+<label for="priority-input">Set priority:</label>
+<select id="priority-input" name="priority" required>
+<option value="" disabled selected>--Please choose an option--</option>
+  <option value="low">Low</option>
+  <option value="medium">Medium</option>
+  <option value="high">High</option>
+</select>
+
+<button type="submit">
+  Add Task
+</button>
+</form>
+    <div id="app"></div>
 </body>
 </html>
