@@ -5,7 +5,7 @@ const saveTasks = (tasks: Task[]) => {
 }
 
 function loadTasks(){
-    return JSON.parse(localStorage.getItem("my-tasks") || "");
+    return JSON.parse(localStorage.getItem("my-tasks") || "[]")
 }
 
 export {
