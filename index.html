@@ -16,9 +16,9 @@
   type="text"
   placeholder="New task"
   name="name"
+  pattern="^.{2,40}$"
 required
 />
-
 <label for="priority-input">Set priority:</label>
 <select id="priority-input" name="priority" required>
 <option value="" disabled selected>--Please choose an option--</option>
@@ -26,6 +26,7 @@ required
   <option value="medium">Medium</option>
   <option value="high">High</option>
 </select>
+<p id="error-message"></p>
 
 <button type="submit">
   Add Task

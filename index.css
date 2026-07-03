@@ -4,6 +4,10 @@
   margin-top: 10px;
 }
 
+#error-message{
+  color:red;
+}
+
 .task p{
   margin:0px;
   margin-bottom:4px;
